@@ -7,7 +7,7 @@ function App() {
   const isAuthPage = ROUTES.REGISTER === location.pathname || ROUTES.LOGIN === location.pathname;
   console.log(isAuthPage)
   return (
-    <div>
+    <div className="bg-gray-100">
       {!isAuthPage && <AppHeader />}
       <Outlet />
     </div>
